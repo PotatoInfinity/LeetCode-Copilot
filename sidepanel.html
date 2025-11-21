@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="brand">
+        <span class="logo-icon">⚡</span>
+        <span>AI Copilot</span>
+      </div>
+      <div id="lang-badge" class="badge">READY</div>
+    </header>
+
+    <main id="content-area">
+      
+      <div id="placeholder-state" class="state-view active">
+        <div class="empty-icon">🧠</div>
+        <p>Select a problem and click "Solve" to begin.</p>
+      </div>
+
+      <!-- Loader -->
+      <div id="loading-state" class="state-view">
+        <div class="skeleton-line" style="width: 60%"></div>
+        <div class="skeleton-block"></div>
+        <div class="skeleton-line" style="width: 80%"></div>
+      </div>
+
+      <!-- Error -->
+      <div id="error-state" class="state-view">
+        <div class="error-box">
+          <strong id="error-msg">Error</strong>
+        </div>
+      </div>
+      <div id="success-state" class="state-view">
+        <div class="code-wrapper">
+          <pre><code id="code-display"></code></pre>
+          <button id="copy-btn" title="Copy">📋</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

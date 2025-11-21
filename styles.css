@@ -1,0 +1,85 @@
+#gemini-glass-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 2147483646; 
+  
+  touch-action: none;
+  width: auto;
+  height: auto;
+}
+
+#gemini-glass-btn {
+  padding: 10px 20px;
+  background: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s, transform 0.1s;
+
+  white-space: nowrap;      
+  box-sizing: border-box;  
+  min-width: max-content;  
+  user-select: none;        
+  line-height: 1.2;      
+}
+
+#gemini-glass-btn:active { cursor: grabbing; transform: scale(0.98); }
+#gemini-glass-btn:hover { background: rgba(50, 50, 50, 0.9); border-color: #007acc; color: #fff; }
+
+.gemini-logo { 
+  font-size: 16px; 
+  display: inline-block;
+}
+
+.gemini-modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 2147483647;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.2s;
+}
+.gemini-modal-overlay.active { opacity: 1; pointer-events: auto; }
+.gemini-modal-box {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  transform: translateY(10px);
+  transition: transform 0.2s;
+  box-sizing: border-box;
+}
+.gemini-modal-overlay.active .gemini-modal-box { transform: translateY(0); }
+
+.modal-title { color: #fff; margin-bottom: 15px; text-align: center; font-weight: 600; font-family: sans-serif; }
+
+.lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 15px; }
+
+.lang-btn {
+  background: #2d2d2d; border: 1px solid transparent; color: #ccc;
+  padding: 10px; border-radius: 6px; cursor: pointer; font-weight: 500;
+  transition: all 0.2s;
+}
+.lang-btn:hover { background: #3d3d3d; color: #fff; border-color: #007acc; }
+
+.modal-cancel {
+  width: 100%; background: transparent; border: none; color: #777;
+  cursor: pointer; margin-top: 5px; font-size: 12px;
+}
+.modal-cancel:hover { color: #aaa; }
