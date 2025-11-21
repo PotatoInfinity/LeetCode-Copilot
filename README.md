@@ -1,7 +1,6 @@
 # **LeetCode-Copilot**
-
 An extension that helps you solve LeetCode problems with AI-powered suggestions.
-
+<img width="1432" height="1412" alt="image" src="https://github.com/user-attachments/assets/6bdb9581-3dc7-4994-857a-c59f39d74fd3" />
 ## Installation
 
 ### **1. Clone the repository**
@@ -33,3 +32,10 @@ Generate one from [Google AI Studio](https://aistudio.google.com/api-keys)
 3. A suggestion sidebar will appear—powered by your Gemini key
 
 ## Enjoy!
+
+https://github.com/user-attachments/assets/9d38b355-ae90-4406-8c0a-2820a4ffaf7a
+
+
+
+
+
