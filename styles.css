@@ -1,7 +1,7 @@
 #gemini-glass-container {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  top: 140px;
+  left: 270px;
   z-index: 2147483646; 
   
   touch-action: none;
