@@ -35,7 +35,7 @@ Generate one from [Google AI Studio](https://aistudio.google.com/api-keys)
 
 https://github.com/user-attachments/assets/9d38b355-ae90-4406-8c0a-2820a4ffaf7a
 
-
+## Feel free to fork this repository and improve it — your contributions are greatly appreciated! 😀
 
 
 
